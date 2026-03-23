@@ -1,0 +1,17 @@
+name: Java CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+    types: [opened, reopened, synchronize]
+  merge_group:
+    types: [checks_requested]
+
+jobs:
+  java_ci:
+    name: Java CI
+    uses: KatsuteDev/Workflows/.github/workflows/java.ci.yml@main
+    with:
+      package: true
+    secrets: inherit

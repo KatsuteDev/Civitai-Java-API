@@ -1,0 +1,13 @@
+name: Deploy
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  deploy:
+    name: Deploy
+    uses: KatsuteDev/Workflows/.github/workflows/java.deploy.maven.yml@main
+    with:
+      environment: Maven Central
+    secrets: inherit

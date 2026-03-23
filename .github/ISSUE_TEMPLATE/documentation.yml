@@ -1,0 +1,30 @@
+name: Documentation Issue
+description: Report a documentation issue
+labels: [bug, documentation]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before opening a documentation report please check that your issue was not already discussed in the following:
+
+        * [Issues](https://github.com/KatsuteDev/Civitai-Java-API/issues?q=is%3Aissue+is%3Aopen+label%3Abug%2C%22critical+issue%22+label%3Adocumentation)
+
+        Please also check that:
+
+        * This is actually an issue and not intended behavior.
+        * The issue is from the latest documentation.
+
+  - type: input
+    attributes:
+      label: Location
+      description: |
+        Link to the documentation issue or name of the class.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Issue
+    validations:
+      required: true

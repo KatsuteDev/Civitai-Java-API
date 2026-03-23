@@ -1,1 +1,1 @@
-# Civitai-Java-API
+# Civitai Java Api

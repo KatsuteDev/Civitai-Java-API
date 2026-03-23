@@ -1,0 +1,61 @@
+name: Bug Report
+description: Report a bug
+labels: [bug]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before opening a bug report please check that your issue was not already discussed in the following:
+
+        * [Issues](https://github.com/KatsuteDev/Civitai-Java-API/issues?q=is%3Aissue+is%3Aopen+label%3Abug%2C%22critical+issue%22)
+        * [Documentation](https://docs.katsute.dev/civitai)
+
+        Please also check that:
+
+        * This is actually a bug and not a feature.
+        * You are running the latest version.
+
+  - type: input
+    attributes:
+      label: Operating System
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Java Runtime
+      options:
+        - Java
+        - Android
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Java Version
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Release Version
+      description: |
+        Do not write 'latest'.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Issue
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: How to replicate
+      description: |
+        Include steps to reproduce this issue.
+    validations:
+      required: true

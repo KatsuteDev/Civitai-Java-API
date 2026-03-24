@@ -1,14 +1,18 @@
-package dev.katsute.civitai.model;
+package dev.katsute.civitai.model.file;
 
-public enum ModelVersionSize {
+public enum ModelSize {
 
     Full("full"),
     Pruned("pruned");
 
     private final String value;
 
-    ModelVersionSize(final String value){
+    ModelSize(final String value){
         this.value = value;
+    }
+
+    public final String value(){
+        return value;
     }
 
     @Override

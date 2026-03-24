@@ -1,14 +1,15 @@
 package dev.katsute.civitai.model;
 
-public enum ModelVersionFormat {
+public enum CommercialUse {
 
-    SafeTensor("SafeTensor"),
-    PickleTensor("PickleTensor"),
-    Other("Other");
+    None    ("None"),
+    Image   ("Image"),
+    Rent    ("Rent"),
+    Sell    ("Sell");
 
     private final String value;
 
-    ModelVersionFormat(final String value){
+    CommercialUse(final String value){
         this.value = value;
     }
 

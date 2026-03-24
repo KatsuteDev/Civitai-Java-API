@@ -1,4 +1,4 @@
-package dev.katsute.civitai;
+package dev.katsute.civitai.query;
 
 public enum Sort {
 
@@ -10,6 +10,10 @@ public enum Sort {
 
     Sort(final String value){
         this.value = value;
+    }
+
+    public final String value(){
+        return value;
     }
 
     @Override

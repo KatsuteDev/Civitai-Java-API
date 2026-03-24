@@ -16,6 +16,10 @@ public enum ModelType {
         this.value = value;
     }
 
+    public final String value(){
+        return value;
+    }
+
     @Override
     public final String toString() {
         return name();

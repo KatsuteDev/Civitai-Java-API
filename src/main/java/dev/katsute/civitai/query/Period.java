@@ -1,14 +1,16 @@
-package dev.katsute.civitai.model;
+package dev.katsute.civitai.query;
 
-public enum ModelVersionFormat {
+public enum Period {
 
-    SafeTensor("SafeTensor"),
-    PickleTensor("PickleTensor"),
-    Other("Other");
+    AllTime ("AllTime"),
+    Year    ("Year"),
+    Month   ("Month"),
+    Week    ("Week"),
+    Day     ("Day");
 
     private final String value;
 
-    ModelVersionFormat(final String value){
+    Period(final String value){
         this.value = value;
     }
 

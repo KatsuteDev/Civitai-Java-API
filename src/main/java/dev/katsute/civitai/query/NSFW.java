@@ -1,4 +1,4 @@
-package dev.katsute.civitai;
+package dev.katsute.civitai.query;
 
 public enum NSFW {
 

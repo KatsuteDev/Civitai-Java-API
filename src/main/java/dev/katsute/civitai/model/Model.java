@@ -4,7 +4,7 @@ import dev.katsute.civitai.Creator;
 
 public abstract class Model {
 
-    private Model(){};
+    public Model(){};
 
     public abstract int getId();
 

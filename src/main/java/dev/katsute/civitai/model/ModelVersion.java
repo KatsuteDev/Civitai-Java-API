@@ -6,7 +6,7 @@ import dev.katsute.civitai.model.file.ModelFile;
 
 public abstract class ModelVersion {
 
-    private ModelVersion(){};
+    public ModelVersion(){};
 
     public abstract int getId();
 

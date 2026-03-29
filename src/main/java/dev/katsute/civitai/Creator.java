@@ -5,15 +5,13 @@ import dev.katsute.civitai.model.Model;
 
 public abstract class Creator {
 
-    private Creator(){};
+    public Creator(){};
 
     //
 
     public abstract String getUsername();
 
     public abstract int getModelCount();
-
-    public abstract String getModelsLink();
 
     //
 

@@ -16,7 +16,36 @@ final class CivitaiObjectService {
     }
 
     final Creator asCreator(final JsonObject obj){
-        return null;
+        return new Creator(){
+
+            private final String username = obj.getString("username");
+            private final int modelCount = obj.getInt("modelCount");
+
+            @Override
+            public final String getUsername() {
+                return username;
+            }
+
+            @Override
+            public final int getModelCount() {
+                return modelCount;
+            }
+
+            @Override
+            public final Page<Model> getModels() {
+                return service.queryModels()
+                    .username(username)
+                    .searchAll();
+            }
+
+            @Override
+            public final Page<Image> getImages() {
+                return service.queryImages()
+                    .username(username)
+                    .searchAll();
+            }
+
+        };
     }
 
     final Model asModel(final JsonObject obj){
@@ -36,7 +65,22 @@ final class CivitaiObjectService {
     }
 
     final Tag asTag(final JsonObject obj){
-        return null;
+        return new Tag(){
+
+            private final String name = obj.getString("name");
+            private final int modelCount = obj.getInt("modelCount");
+
+            @Override
+            public final String getName() {
+                return name;
+            }
+
+            @Override
+            public final int getModelCount() {
+                return modelCount;
+            }
+
+        };
     }
 
 }

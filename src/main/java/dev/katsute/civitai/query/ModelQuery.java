@@ -15,7 +15,9 @@ public abstract class ModelQuery extends Query<Model,ModelQuery> {
 
     public abstract ModelQuery sort(final Sort sort);
 
-    public abstract ModelQuery favorites(final int favorites);
+    public abstract ModelQuery favorites();
+
+    public abstract ModelQuery favorites(final boolean favorites);
 
     public abstract ModelQuery hidden();
 

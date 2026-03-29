@@ -7,7 +7,7 @@ import dev.katsute.civitai.query.NSFW;
 
 public abstract class Image {
 
-    private Image(){};
+    public Image(){};
 
     //
 

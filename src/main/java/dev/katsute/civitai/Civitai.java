@@ -12,38 +12,45 @@ public abstract class Civitai {
     Civitai(){};
 
     public static Civitai authenticate(final String token){
-        return new CivitaiImpl(token);
+        return new CivitaiService(token);
     }
 
-    //
-
-    public abstract Creator getCreator(final int id);
+    // creator
 
     public abstract CreatorQuery queryCreators();
 
+    // image
+
     public abstract ImageQuery queryImages();
 
-    public abstract ModelQuery queryModels();
+    // model
 
     public abstract Model getModel(final int id);
 
+    public abstract ModelQuery queryModels();
+
     public abstract ModelVersion getModelVersion(final int id);
+
     public abstract ModelVersion getModelVersion(final String hash);
+
+    // tags
 
     public abstract TagQuery queryTags();
 
-    //
+    // generation
 
     public abstract String queueImage(final String options);
 
+    public abstract String getModelCoverage(final String model);
+
+    public abstract String getModelCoverage(final String[] models);
+
     public abstract String getJob(final int job);
+
     public abstract String getJob(final String token);
 
     public abstract String queryJob(final String query);
 
     public abstract boolean cancelJob(final String id);
-
-    public abstract String getModelCoverage(final String model);
-    public abstract String getModelCoverage(final String[] models);
 
 }

@@ -1,6 +1,6 @@
 package dev.katsute.civitai.model;
 
-import dev.katsute.civitai.query.Page;
+import dev.katsute.civitai.Page;
 
 public abstract class ModelVersionPage extends Page<ModelVersion> {
 

@@ -13,6 +13,10 @@ public enum NSFW {
         this.value = value;
     }
 
+    public String value() {
+        return value;
+    }
+
     @Override
     public final String toString() {
         return name();

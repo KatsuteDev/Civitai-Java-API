@@ -1,13 +1,19 @@
 package dev.katsute.civitai.query;
 
-public abstract class Query<R> {
+import dev.katsute.civitai.Page;
 
-    public abstract Query<R> limit(int limit);
+public abstract class Query<R, Q extends Query<R, Q>> {
 
-    public abstract Query<R> page(int page);
+    public abstract Q limit(int limit);
 
-    public abstract Query<R> query(String query);
+    public abstract Q page(int page);
 
-    public abstract Page<R> search();
+    public abstract Q query(String query);
+
+    //
+
+    public abstract R[] search();
+
+    public abstract Page<R> searchAll();
 
 }

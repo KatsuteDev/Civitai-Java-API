@@ -1,7 +1,7 @@
 package dev.katsute.civitai;
 
-import dev.katsute.civitai.query.ImageQuery;
-import dev.katsute.civitai.query.ModelQuery;
+import dev.katsute.civitai.image.Image;
+import dev.katsute.civitai.model.Model;
 
 public abstract class Creator {
 
@@ -17,8 +17,8 @@ public abstract class Creator {
 
     //
 
-    public abstract ModelQuery getModels();
+    public abstract Page<Model> getModels();
 
-    public abstract ImageQuery getImages();
+    public abstract Page<Image> getImages();
 
 }

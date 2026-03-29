@@ -24,8 +24,6 @@ import java.util.regex.MatchResult;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import dev.katsute.civitai.exception.JsonSyntaxException;
-
 import static dev.katsute.civitai.Json.Expect.*;
 import static dev.katsute.civitai.Json.Type.*;
 

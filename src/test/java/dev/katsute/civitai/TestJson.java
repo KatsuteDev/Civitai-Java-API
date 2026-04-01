@@ -1,7 +1,6 @@
 package dev.katsute.civitai;
 
 import dev.katsute.civitai.Json.JsonObject;
-import dev.katsute.civitai.exception.JsonSyntaxException;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -93,7 +92,6 @@ final class TestJson {
         assertEquals(0, jsonObject.getJsonArray("carr").length);
     }
 
-    @SuppressWarnings("unused")
     private static Stream<Arguments> mapProvider(){
         return new ObjectStream()
             .add(1.0, jsonObject.getDouble("double"))
@@ -129,7 +127,6 @@ final class TestJson {
         assertEquals(0, ((JsonObject) jsonArray.get(15)).size());
     }
 
-    @SuppressWarnings("unused")
     private static Stream<Arguments> arrayProvider(){
         return new ObjectStream()
             .add(1.0)

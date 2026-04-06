@@ -257,7 +257,6 @@ final class CivitaiService extends Civitai{
         );
     }
 
-
     @Override
     public final ModelQuery queryModels() {
         return new ModelQuery() {
@@ -558,36 +557,30 @@ final class CivitaiService extends Civitai{
         return null;
     }
 
-
     @Override
     public final String getModelCoverage(final String model) {
         return null;
     }
-
 
     @Override
     public final String getModelCoverage(final String[] models) {
         return null;
     }
 
-
     @Override
     public final String getJob(final int job) {
         return null;
     }
-
 
     @Override
     public final String getJob(final String token) {
         return null;
     }
 
-
     @Override
     public final String queryJob(final String query) {
         return null;
     }
-
 
     @Override
     public final boolean cancelJob(final String id) {

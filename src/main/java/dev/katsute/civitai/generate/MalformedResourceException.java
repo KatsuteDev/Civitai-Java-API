@@ -27,7 +27,6 @@ package dev.katsute.civitai.generate;
  */
 public final class MalformedResourceException extends RuntimeException {
 
-
     MalformedResourceException(final String message){
         super(message);
     }
